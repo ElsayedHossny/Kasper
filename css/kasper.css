@@ -1271,5 +1271,34 @@ header nav .form i {
     margin-left: 5px;
     font-size: 20px;
 }
+/* start load */
+.footer .load{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0;
+    position: relative;
+    z-index: 2;
+}
+.footer .load div{
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: var(--main-color);
+    animation: up-down .9s linear alternate infinite;
+}
+.footer .load .t{
+    animation-delay: .3s;
+}
+.footer .load .th{
+    animation-delay: .6s;
+}
+@keyframes up-down{
+    to{
+        opacity: 0.4;
+        transform: translateY(-20px);
+    }
+}
+/* end load */
 
 /* end footer */
